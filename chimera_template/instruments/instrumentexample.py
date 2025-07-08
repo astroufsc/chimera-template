@@ -10,9 +10,9 @@ class InstrumentExample(ChimeraObject):
         ChimeraObject.__init__(self)
 
     def __start__(self):
-        self.doSomething("test argument")
+        self.do_something("test argument")
 
-    def doSomething(self, arg):
+    def do_something(self, arg):
         self.log.warning("Hi, I'm doing something.")
         self.log.warning("My arg=%s" % arg)
         self.log.warning("My param1=%s" % self["param1"])
