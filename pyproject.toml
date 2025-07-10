@@ -12,7 +12,9 @@ requires-python = ">=3.13"
 dependencies = [
     "chimera",
 ]
-
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 [tool.ruff.lint]
 select = ["N802", "N803"]
 
